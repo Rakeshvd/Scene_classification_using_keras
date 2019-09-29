@@ -1,7 +1,7 @@
 # Scene_classification_using_keras
 This is a multi-image classification problem.A simple keras model is used.
 
-Image_classes:
+Image_classes(preview in github_data folder):
 
 1.buildings.
 
