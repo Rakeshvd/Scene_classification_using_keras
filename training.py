@@ -1,7 +1,6 @@
 import sys
 import os
 import time
-from keras import callbacks
 from keras import optimizers
 from keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
@@ -70,9 +69,6 @@ validation_generator = test_datagen.flow_from_directory(
     target_size=(img_height, img_width),
     batch_size=batch_size,
     class_mode='categorical')
-
-callback = callbacks.TensorBoard(log_dir='/content/tf-log/', histogram_freq=0)
-
 
 model.fit_generator(
     train_generator,
